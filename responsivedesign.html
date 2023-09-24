@@ -1,0 +1,81 @@
+<!doctype html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="_width=device-width, initial-scale=1">
+	<title> Responsive Design</title>
+	<style>
+
+		* {
+			box-sizing: border-box;
+		}
+
+		p {
+			background-color: red;
+			float: left;
+			border: 5px solid white;
+			height: 150px;
+		}
+
+		.row {
+			width: 100%;
+		}
+
+		@media (min-width: 950px) and (max-width: 1199px) {
+				
+				.colmd6 {
+				width: 50%;
+				}
+
+				.colmd12 {
+				width: 100%;
+				}
+
+				.colmd4 {
+				width: 33.33%;
+				}
+		}
+
+		@media (min-width: 1200px) {
+			
+			.col4lg {
+				width: 33.33%;
+			}
+
+			.col5lg {
+				width: 41.67%;
+			}
+
+			.col6lg {
+				width: 50%;
+			}
+
+			.col7lg {
+				width: 58.33%;
+			}
+
+			.col2lg {
+				width: 16.66%;
+			}
+		}
+
+	</style>
+</head>
+<body>
+	<span> <h1> Responsive Design </h1> </span>
+	<div class = "row">
+		<p class= "col4lg colmd6"> First Paragraph </p>
+		<p class= "col4lg colmd6"> Second Paragraph </p>
+		<p class= "col4lg colmd6"> Third Paragraph </p>
+
+		<p class= "col5lg colmd6"> Fourth Paragraph </p>
+		<p class= "col7lg colmd12"> Fifth Paragraph </p>
+
+		<p class= "col6lg colmd12"> Sixth Paragraph </p>
+		<p class= "col6lg colmd4"> Seventh Paragraph </p>
+
+		<p class= "col2lg colmd4"> Eight Paragraph </p>
+		<p class= "col2lg colmd4"> Ninth Paragraph </p>
+	</div>
+</body>
+</html>
